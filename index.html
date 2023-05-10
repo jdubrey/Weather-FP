@@ -19,97 +19,103 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <div class="weather">
-        <form>
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter a city"
-                class="form-control search-input"
-              />
-              <div class="col-3">
+    <div class="App">
+      <div class="container">
+        <div class="weather">
+          <form class="input-city">
+            <div class="row">
+              <div class="col-9">
                 <input
-                  type="submit"
-                  class="btn btn-primary w-100"
-                  value="Search"
+                  type="search"
+                  placeholder="Enter a city"
+                  class="form-control search-input"
                 />
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="weather info">
+            <div class="row">
+              <div class="col-6">
+                <h1>Miami</h1>
+                <ul>
+                  <li>
+                    <span> Date, 5:00, weather status </span>
+                  </li>
+                  <li>
+                    <span> Humidity, Wind Speed </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-8">
+                <div>
+                  <span class="temperature">79</span>
+                  <span class="unit">°C</span>
+                </div>
               </div>
             </div>
           </div>
-        </form>
-        <div class="weather info">
-          <div class="row">
-            <div class="col-6">
-              <h1>Miami</h1>
-              <ul>
-                <li>
-                  <span> Date, 5:00, weather status </span>
-                </li>
-                <li>
-                  <span> Humidity, Wind Speed </span>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-8">
-              <div>
-                <span class="temperature">79</span>
-                <span class="unit">°C</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="weekly forecast row">
-        <div class="col">
-          <div class="weekly forcast preview">
-            <div class="forecast-time">Wed</div>
-            <div class="forecast-temperature">
-              <span class="forecast-temperature-max">82°</span>
-              <span class="forecast-temperature-min">76°</span>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="weekly forcast preview">
-            <div class="forecast-time">Thur</div>
-            <div class="forecast-temperature">
-              <span class="forecast-temperature-max">82°</span>
-              <span class="forecast-temperature-min">76°</span>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="weekly forcast preview">
-            <div class="forecast-time">Fri</div>
-            <div class="forecast-temperature">
-              <span class="forecast-temperature-max">82°</span>
-              <span class="forecast-temperature-min">76°</span>
-            </div>
-          </div>
-        </div>
 
-        <div class="col">
-          <div class="weekly forcast preview">
-            <div class="forecast-time">Sat</div>
-            <div class="forecast-temperature">
-              <span class="forecast-temperature-max">82°</span>
-              <span class="forecast-temperature-min">76°</span>
+          <div class="weekly forecast row">
+            <div class="col">
+              <div class="weekly forcast preview">
+                <div class="forecast-time">Wed</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">82°</span>
+                  <span class="forecast-temperature-min">76°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="weekly forcast preview">
+                <div class="forecast-time">Thur</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">82°</span>
+                  <span class="forecast-temperature-min">76°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="weekly forcast preview">
+                <div class="forecast-time">Fri</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">82°</span>
+                  <span class="forecast-temperature-min">76°</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="weekly forcast preview">
+                <div class="forecast-time">Sat</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">82°</span>
+                  <span class="forecast-temperature-min">76°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="weekly forcast preview">
+                <div class="forecast-time">Sun</div>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">82°</span>
+                  <span class="forecast-temperature-min">76°</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="weekly forcast preview">
-            <div class="forecast-time">Sun</div>
-            <div class="forecast-temperature">
-              <span class="forecast-temperature-max">82°</span>
-              <span class="forecast-temperature-min">76°</span>
-            </div>
-          </div>
+          <footer>
+            This project was coded by Jessica Dubrey, include links pls
+          </footer>
+          <script src="src/index.js"></script>
         </div>
       </div>
-      <script src="src/index.js"></script>
     </div>
   </body>
 </html>

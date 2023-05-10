@@ -1,0 +1,22 @@
+body {
+  background: plum;
+}
+.App {
+  margin: 60px auto;
+  max-width: 800px;
+  background: plum;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+}
+.weather {
+  padding: 40px;
+  border-radius: 16px;
+  color: #878787;
+  background: white;
+}
+.input-city {
+  border-bottom: 2px, solid, darkblue;
+  padding-bottom: 30px;
+}
