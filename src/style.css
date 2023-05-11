@@ -1,10 +1,6 @@
-body {
-  background: plum;
-}
 .App {
   margin: 60px auto;
   max-width: 800px;
-  background: plum;
 }
 .container {
   max-width: 960px;
@@ -13,10 +9,9 @@ body {
 .weather {
   padding: 40px;
   border-radius: 16px;
-  color: #878787;
-  background: white;
+  color: black;
+  background: plum;
 }
 .input-city {
-  border-bottom: 2px, solid, darkblue;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
