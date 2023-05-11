@@ -23,33 +23,35 @@ function search(event) {
   pinpoint.innerHTML = update.value;
   searchCity(update.value);
 }
+let form = document.querySelector("form");
+form.addEventListener("submit", search);
 
 function newForecast(response) {
   console.log(response);
-  console.log(response.data.main.temp);
-  console.log(response.data.main.humidity);
-  console.log(response.data.weather[0].description);
+  console.log(response.data.temperature.current);
+  console.log(response.data.temperature.humidity);
+  console.log(response.data.condition.description);
   let newTemp = document.querySelector("#today-temp");
-  newTemp.innerHTML = `${Math.round(response.data.main.temp)}`;
+  newTemp.innerHTML = `${Math.round(response.data.temperature.current)}`;
 
   let newHumidity = document.querySelector("#humidity");
   newHumidity.innerHTML = `Humidity: ${Math.round(
-    response.data.main.humidity
+    response.data.temperature.humidity
   )}%`;
 
+  let newWind = document.querySelector("#windSpeed");
+  newWind.innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)}mph`;
+
   let newDescrption = document.querySelector("#weather-description");
-  newDescrption.innerHTML = response.data.weather[0].description;
+  newDescrption.innerHTML = response.data.condition.description;
 
   let newCity = document.querySelector("#cityWeather");
-  newCity.innerHTML = response.data.name;
+  newCity.innerHTML = response.data.city;
 }
 
 function searchCity(city) {
   let apiKey = "odc80af43206eetf0e915ae198eb039c";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=odc80af43206eetf0e915ae198eb039c&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(newForecast);
 }
 searchCity("Miami");
-
-let exact = document.querySelector("#button");
-exact.addEventListener("click", searchCity);
