@@ -48,8 +48,12 @@ function newForecast(response) {
   let newCity = document.querySelector("#cityWeather");
   newCity.innerHTML = response.data.city;
 
-  //let newIcon = document.querySelector("#icon");
-  //newIcon = response.data.condtion.icon;
+  let newIcon = document.querySelector("#icon");
+  newIcon.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
+  newIcon.setAttribute("alt", response.data.condition.icon);
 }
 
 function searchCity(city) {
