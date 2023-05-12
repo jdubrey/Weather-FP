@@ -38,12 +38,10 @@ function newForecast(response) {
   newTemp.innerHTML = `${Math.round(response.data.temperature.current)}`;
 
   let newHumidity = document.querySelector("#humidity");
-  newHumidity.innerHTML = `Humidity: ${Math.round(
-    response.data.temperature.humidity
-  )}%`;
+  newHumidity.innerHTML = `${Math.round(response.data.temperature.humidity)}%`;
 
   let newWind = document.querySelector("#windSpeed");
-  newWind.innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)}mph`;
+  newWind.innerHTML = `${Math.round(response.data.wind.speed)}mph`;
 
   let newDescrption = document.querySelector("#weather-description");
   newDescrption.innerHTML = response.data.condition.description;
