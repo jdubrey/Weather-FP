@@ -6,14 +6,19 @@ body {
   max-width: 800px;
 }
 .container {
-  max-width: 960px;
+  max-width: 660px;
   width: 100%;
 }
-.weather {
+.weather-info {
   padding: 40px;
+}
+.weather {
   border-radius: 16px;
   color: black;
   background: white;
+}
+form {
+  padding: 40px;
 }
 .search-input {
   background: #f9f7fe;
