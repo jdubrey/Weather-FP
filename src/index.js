@@ -47,6 +47,9 @@ function newForecast(response) {
 
   let newCity = document.querySelector("#cityWeather");
   newCity.innerHTML = response.data.city;
+
+  //let newIcon = document.querySelector("#icon");
+  //newIcon = response.data.condtion.icon;
 }
 
 function searchCity(city) {
