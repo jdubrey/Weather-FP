@@ -14,26 +14,27 @@ body {
 }
 .weather {
   border-radius: 16px;
-  color: black;
   background: white;
 }
 form {
   padding: 40px;
+  padding-bottom: 10px;
 }
 .search-input {
   background: #f9f7fe;
   border: #f9f7fe;
   color: rgba(39, 33, 66, 0.4);
 }
-.input-city {
-  padding-bottom: 10px;
+.search-input:hover {
+  background: #f9f7fe;
+  border: #f9f7fe;
+  color: rgba(39, 33, 66, 0.4);
 }
 .weather-temperature,
 .active {
   color: black;
   cursor: default;
 }
-
 .weather-temperature,
 .active:hover {
   text-decoration: none;
