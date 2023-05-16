@@ -18,26 +18,26 @@ day.innerHTML = today;
 
 function displayForecast(response) {
   console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat"];
 
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
     <div class="col-2">
-      ${day}
+      ${forecastDay.time}
       <img
         class="weekly-img"
-        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
         alt="broken clouds"
         width="48"
         height="48"
       />
       <div class="forecast-temperature">
-        <span class="forecast-temperature-max">18° </span>
-        <span class="forecast-temperature-min">12°</span>
+        <span class="forecast-temperature-max">${forecastDay.temperature.maximum}° </span>
+        <span class="forecast-temperature-min">${forecastDay.temperature.minimum}°</span>
       </div>
     </div>
   `;
