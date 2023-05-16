@@ -16,6 +16,36 @@ let today = `${currentDay}, ${currentTime}:${currentMinute},`;
 let day = document.querySelector("#currentDay");
 day.innerHTML = today;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat"];
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      ${day}
+      <img
+        class="weekly-img"
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+        alt="broken clouds"
+        width="48"
+        height="48"
+      />
+      <div class="forecast-temperature">
+        <span class="forecast-temperature-max">18° </span>
+        <span class="forecast-temperature-min">12°</span>
+      </div>
+    </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function search(event) {
   event.preventDefault();
   let update = document.querySelector("#city");
@@ -88,3 +118,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 searchCity("Miami");
+displayForecast();
