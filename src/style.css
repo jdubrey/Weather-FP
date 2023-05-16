@@ -67,9 +67,9 @@ form {
 }
 #units {
   position: relative;
-  top: -34px;
+  top: -44px;
   line-height: 1;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 200;
 }
 #cityWeather {
@@ -85,4 +85,26 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.weather-forecast {
+  margin-top: 40px;
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+}
+
+.weekly-img {
+  display: block;
+  margin: 10px auto;
+}
+.forecast-temperature {
+  color: #f65282;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.forecast-temperature-min {
+  margin-left: 10px;
+  opacity: 0.6;
 }
