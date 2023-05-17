@@ -55,9 +55,9 @@ form {
   border-color: #885df1;
 }
 #icon {
-  margin-top: 20px;
-  height: 64px;
-  width: 64px;
+  margin-top: 22px;
+  height: 68px;
+  width: 68px;
 }
 #today-temp {
   margin-left: 3px;
@@ -67,10 +67,10 @@ form {
 }
 #units {
   position: relative;
-  top: -44px;
+  top: -34px;
   line-height: 1;
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 28px;
+  font-weight: 400;
 }
 #cityWeather {
   color: #272142;
