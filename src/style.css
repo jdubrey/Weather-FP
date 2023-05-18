@@ -89,3 +89,9 @@ li {
   margin-left: 10px;
   opacity: 0.6;
 }
+
+.col-2:hover {
+  color: #3498db;
+  background-color: #d6eaf8;
+  border-radius: 4px;
+}
