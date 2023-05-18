@@ -24,7 +24,6 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
@@ -64,7 +63,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "odc80af43206eetf0e915ae198eb039c";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=imperial`;
   console.log(apiUrl);
@@ -82,13 +80,6 @@ let form = document.querySelector("form");
 form.addEventListener("submit", search);
 
 function newForecast(response) {
-  console.log(response);
-  console.log(response.data.temperature.current);
-  console.log(response.data.temperature.humidity);
-  console.log(response.data.condition.description);
-
-  celsiusTemperature = response.data.temperature.current;
-
   let newTemp = document.querySelector("#today-temp");
   newTemp.innerHTML = `${Math.round(response.data.temperature.current)}`;
 
