@@ -1,7 +1,7 @@
 body {
   background: #f9f7fe;
 }
-.App {
+.app {
   margin: 60px auto;
   max-width: 800px;
 }
@@ -9,50 +9,30 @@ body {
   max-width: 660px;
   width: 100%;
 }
-.weather-info {
-  padding: 40px;
-}
 .weather {
   border-radius: 16px;
   background: white;
-}
-form {
   padding: 40px;
-  padding-bottom: 10px;
 }
-.search-input {
-  background: #f9f7fe;
-  border: #f9f7fe;
-  color: rgba(39, 33, 66, 0.4);
+.input-city {
+  padding-bottom: 40px;
 }
+.search-input,
 .search-input:hover {
   background: #f9f7fe;
-  border: #f9f7fe;
-  color: rgba(39, 33, 66, 0.4);
-}
-.weather-temperature,
-.active {
-  color: black;
-  cursor: default;
-}
-.weather-temperature,
-.active:hover {
-  text-decoration: none;
-}
-.colorOne {
-  color: rgba(39, 33, 66, 0.4);
-}
-#celsius-link,
-#fahrenheit-link {
-  text-decoration: none;
-}
-#humidity,
-#windSpeed {
-  color: #f66d8e;
+  border-color: #f9f7fe;
+  font-size: 16px;
 }
 #button {
   background-color: #885df1;
   border-color: #885df1;
+}
+.weather-temperature {
+  color: black;
+}
+#humidity,
+#windSpeed {
+  color: #f66d8e;
 }
 #icon {
   margin-top: 22px;
@@ -67,9 +47,9 @@ form {
 }
 #units {
   position: relative;
-  top: -34px;
+  top: -40px;
   line-height: 1;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
 }
 #cityWeather {
@@ -77,22 +57,24 @@ form {
   font-size: 40px;
   font-weight: 700;
 }
-ul {
+.search-input,
+.weather-info-daily,
+.weather-forecast {
+  color: rgba(39, 33, 66, 0.4);
+}
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 li {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .weather-forecast {
   margin-top: 40px;
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
 }
-
 .weekly-img {
   display: block;
   margin: 10px auto;
@@ -101,7 +83,7 @@ li {
   color: #f65282;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
 }
 .forecast-temperature-min {
