@@ -8,11 +8,14 @@ let days = [
   "Friday",
   "Saturday",
 ];
-let currentTime = now.getHours();
+let currentTime = now.toLocaleTimeString([], {
+  hour: `2-digit`,
+  minute: `2-digit`,
+});
 let currentDay = days[now.getDay()];
 let currentMinute = now.getMinutes();
 
-let today = `${currentDay}, ${currentTime}:${currentMinute},`;
+let today = `${currentDay}, ${currentTime},`;
 let day = document.querySelector("#currentDay");
 day.innerHTML = today;
 
