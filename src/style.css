@@ -17,9 +17,8 @@ body {
 .input-city {
   padding-bottom: 40px;
 }
-.search-input,
-.search-input:hover {
-  background: #f9f7fe;
+#city {
+  background-color: #f9f7fe;
   border-color: #f9f7fe;
   font-size: 16px;
 }
@@ -57,9 +56,9 @@ body {
   font-size: 40px;
   font-weight: 700;
 }
-.search-input,
 .weather-info-daily,
-.weather-forecast {
+.weather-forecast,
+.search-input {
   color: rgba(39, 33, 66, 0.4);
 }
 ul,
