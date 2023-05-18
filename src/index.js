@@ -90,7 +90,7 @@ function newForecast(response) {
   newHumidity.innerHTML = `${Math.round(response.data.temperature.humidity)}%`;
 
   let newWind = document.querySelector("#windSpeed");
-  newWind.innerHTML = `${Math.round(response.data.wind.speed)}mph`;
+  newWind.innerHTML = `${Math.round(response.data.wind.speed)} mph`;
 
   let newDescrption = document.querySelector("#weather-description");
   newDescrption.innerHTML = response.data.condition.description;
