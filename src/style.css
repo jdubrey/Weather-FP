@@ -38,7 +38,6 @@ body {
 }
 #today-temp {
   margin-left: 3px;
-  color: #212121;
   font-size: 80px;
   font-weight: 600;
 }
@@ -50,11 +49,17 @@ body {
   font-weight: 400;
 }
 #cityWeather {
-  color: #00818a;
   font-size: 40px;
   font-weight: 700;
 }
-#button,
+
+#cityWeather,
+#units,
+#today-temp,
+#button {
+  color: #0f3057;
+}
+
 .weather-info-daily,
 .weather-forecast,
 .search-input {
@@ -95,10 +100,10 @@ li {
   border-radius: 4px;
 }
 
+small,
 a {
-  color: #3fc5f0;
-}
-
-a:visited {
   color: #07588a;
+}
+a:hover {
+  color: #3fc5f0;
 }
